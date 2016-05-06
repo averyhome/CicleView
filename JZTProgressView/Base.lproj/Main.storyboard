@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEm-cV-3u7">
+                                <rect key="frame" x="171" y="535" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8t-Uo-LmG"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-sA-8Xj">
+                                <rect key="frame" x="0.0" y="39" width="375" height="589"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SEm-cV-3u7" secondAttribute="bottom" constant="102" id="7da-cL-Int"/>
+                            <constraint firstItem="Q7m-sA-8Xj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nca-aX-pXP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q7m-sA-8Xj" secondAttribute="bottom" constant="39" id="PnG-Ni-yrf"/>
+                            <constraint firstItem="SEm-cV-3u7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f9f-KS-pJZ"/>
+                            <constraint firstItem="SEm-cV-3u7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nn3-WC-fd4"/>
+                            <constraint firstItem="Q7m-sA-8Xj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wP7-rO-ny4"/>
+                            <constraint firstItem="Q7m-sA-8Xj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zVW-XK-36w"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="f9f-KS-pJZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="333"/>
+        </scene>
+    </scenes>
+</document>
